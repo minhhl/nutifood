@@ -1,0 +1,53 @@
+.main-title{
+  height: 40px;
+  line-height: 40px;
+  @include calc('width','100%-40px');
+  display: block;
+  margin: 30px 0 20px 40px;
+  color: white;
+  font-size: 18px;
+  padding-left: 25px;
+  text-transform: uppercase;
+  position: relative;
+  a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+  }
+  .title-type{
+    position: absolute;
+    left: -50px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #02a94f;
+    @include border-radius(50%);
+    background-color: white;
+    top: -10px;
+    .icon-icon-tree,.icon-icon-doctor,.icon-icon-box-question{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-top: -22px;
+      margin-left: -23px;
+    }
+    .icon-icon-doctor{
+      margin-top: -23px;
+      margin-left: -22px;
+    }
+    .icon-icon-box-question{
+      margin-left: -20px;
+      margin-top: -20px;
+    }
+  }
+  &.green{
+    background-color: #02a94f;
+  }
+  &.red{
+    background-color: #e81c1f;
+    .title-type{
+      border: 1px solid #e81c1f;
+    }
+  }
+}

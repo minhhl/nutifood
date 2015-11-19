@@ -21,6 +21,9 @@
     margin: 0;
     .navbar-collapse {
       border: 0;
+      background-color: transparent;
+      position: relative;
+      z-index: 10;
     }
     .navbar-brand {
       display: table;
@@ -56,53 +59,56 @@
       margin-right: 3px;
       margin-bottom: 0;
     }
-  }
-
-  @include breakpoint(md-break){
-    .navbar-collapse {
-      box-shadow: none;
-      .navbar-nav {
-        float: none;
-        margin-left: 5px;
-        margin-right: 5px;
-        margin-top: 15px;
+    @include breakpoint(md-break){
+      .navbar-collapse {
+        box-shadow: none;
+        .navbar-nav {
+          float: none;
+          margin-left: 5px;
+          margin-right: 5px;
+          margin-top: 15px;
+        }
+        .social-icons {
+          margin-bottom: 0;
+          margin-top: -55px;
+        }
       }
-      .social-icons {
-        margin-bottom: 0;
-        margin-top: -55px;
+    }
+
+    @include breakpoint(sm-break){
+      .navbar-collapse {
+        box-shadow: none;
+        background-color: #c2171a;
+        .navbar-nav {
+          float: none;
+          margin-left: 5px;
+          margin-right: 5px;
+          margin-top: 15px;
+        }
+        .social-icons {
+          margin-bottom: 0;
+          margin-top: -55px;
+        }
+      }
+    }
+
+    @include breakpoint(xs-break) {
+      .navbar-collapse {
+        box-shadow: none;
+        background-color: #c2171a;
+        .navbar-nav {
+          margin-left: 5px;
+          margin-right: 5px;
+          margin-top: 15px;
+        }
+        .social-icons {
+          float: right;
+          margin-bottom: 10px;
+          margin-top: 0;
+        }
       }
     }
   }
 
-  @include breakpoint(sm-break){
-    .navbar-collapse {
-      box-shadow: none;
-      .navbar-nav {
-        float: none;
-        margin-left: 5px;
-        margin-right: 5px;
-        margin-top: 15px;
-      }
-      .social-icons {
-        margin-bottom: 0;
-        margin-top: -55px;
-      }
-    }
-  }
 
-  @include breakpoint(xs-break) {
-    .navbar-collapse {
-      box-shadow: none;
-      .navbar-nav {
-        margin-left: 5px;
-        margin-right: 5px;
-        margin-top: 15px;
-      }
-      .social-icons {
-        float: right;
-        margin-bottom: 10px;
-        margin-top: 0;
-      }
-    }
-  }
 }

@@ -3,8 +3,20 @@
   background: url("../img/bg-banner.jpg") no-repeat center center;
   background-size: cover;
   width: 100%;
-  height: 387px;
+  padding-bottom: 30px;
   clear: both;
+  position: relative;
+  z-index: 0;
+  &:after{
+    position: absolute;
+    bottom: -10px;
+    content: '';
+    background: url("../img/bg-shadow.png") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 74px;
+    z-index: -1;
+  }
   .group-banner {
     margin-top: 10px;
     display: block;
@@ -76,10 +88,35 @@
           }
           .news-img{
             display: table-cell;
+            width: 65px;
+            height: 65px;
+            border: 1px solid whitesmoke;
           }
 
           .news-detail{
             display: table-cell;
+            padding-left: 15px;
+            position: relative;
+            vertical-align: top;
+            .sort-content{
+              margin: 0;
+              color: white;
+              word-break: keep-all;
+            }
+            .viewed{
+              position: absolute;
+              left: 15px;
+              width: 60px;
+              bottom: 0;
+              i{
+                display: inline-block;
+                opacity: 0.3;
+              }
+              span{
+                display: inline-block;
+                color: #016b32;
+              }
+            }
           }
         }
       }
