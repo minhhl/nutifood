@@ -1,0 +1,88 @@
+.banner {
+  display: block;
+  background: url("../img/bg-banner.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 387px;
+  clear: both;
+  .group-banner {
+    margin-top: 10px;
+    display: block;
+    #nutri-event {
+      position: relative;
+      display: block;
+      width: 100%;
+      &.owl-carousel{
+        .owl-wrapper-outer{
+          @include border-radius-multiple(0,0,0,20px);
+        }
+      }
+
+      .owl-controls {
+        position: absolute;
+        right: 5px;
+        bottom: 10px;
+        .owl-page, div {
+          display: inline-block;
+          margin-right: 12px;
+          span {
+            background-color: #fff;
+            border: 1px solid #e81c1f;
+            margin: 0;
+            height: 14px;
+            width: 14px;
+            @include border-radius(50%);
+            &:hover {
+              background-color: #e81c1f;
+            }
+          }
+          &.active {
+            span {
+              background-color: #e81c1f;
+            }
+          }
+        }
+      }
+    }
+    .group-news{
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: #028f43;
+      @include border-radius-multiple(0,0,20px,0);
+      overflow: hidden;
+      .news-title{
+        background-color: #016b32;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        height: 100%;
+        margin: 0;
+        padding: 5px 0;
+        text-align: center;
+        width: 100%;
+      }
+      .news-box{
+        padding: 8px 15px;
+        .news-item{
+          height: 72px;
+          margin: 5px 0;
+          border-bottom: 1px solid white;
+          &:first-child{
+            margin: 0 0 5px;
+          }
+          &:last-child{
+            margin: 5px 0 0;
+          }
+          .news-img{
+            display: table-cell;
+          }
+
+          .news-detail{
+            display: table-cell;
+          }
+        }
+      }
+    }
+  }
+}

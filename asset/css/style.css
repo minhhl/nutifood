@@ -5885,118 +5885,61 @@ button.close {
   background: url("../img/spritesheet.png") no-repeat;
   display: block; }
   .icon-homepage.icon-icon-box-question {
-    background-position: -5px -5px;
-    width: 56px;
-    height: 64px; }
+    background-position: -71px -5px;
+    width: 41px;
+    height: 46px; }
   .icon-homepage.icon-icon-doc {
-    background-position: -122px -5px;
-    width: 43px;
-    height: 43px; }
-  .icon-homepage.icon-icon-doctor {
-    background-position: -216px -5px;
-    width: 64px;
-    height: 62px; }
-  .icon-homepage.icon-icon-eye {
-    background-position: -347px -5px;
-    width: 29px;
-    height: 16px; }
-  .icon-homepage.icon-icon-facebook {
-    background-position: -175px -53px;
-    width: 22px;
-    height: 43px; }
-  .icon-homepage.icon-icon-heart {
-    background-position: -5px -94px;
-    width: 55px;
-    height: 48px; }
-  .icon-homepage.icon-icon-less {
-    background-position: -70px -94px;
+    background-position: -175px -5px;
     width: 31px;
-    height: 22px; }
+    height: 31px; }
+  .icon-homepage.icon-icon-doctor {
+    background-position: -290px -5px;
+    width: 47px;
+    height: 45px; }
+  .icon-homepage.icon-icon-eye {
+    background-position: -347px -31px;
+    width: 22px;
+    height: 12px; }
+  .icon-homepage.icon-icon-facebook {
+    background-position: -347px -53px;
+    width: 16px;
+    height: 31px; }
+  .icon-homepage.icon-icon-heart {
+    background-position: -122px -60px;
+    width: 40px;
+    height: 35px; }
+  .icon-homepage.icon-icon-less {
+    background-position: -207px -94px;
+    width: 23px;
+    height: 17px; }
   .icon-homepage.icon-icon-pre {
-    background-position: -240px -94px;
-    width: 22px;
-    height: 31px; }
+    background-position: -272px -94px;
+    width: 17px;
+    height: 23px; }
   .icon-homepage.icon-icon-question {
-    background-position: -299px -94px;
-    width: 44px;
-    height: 44px; }
-  .icon-homepage.icon-icon-show {
-    background-position: -353px -94px;
-    width: 22px;
+    background-position: -70px -148px;
+    width: 31px;
     height: 31px; }
+  .icon-homepage.icon-icon-show {
+    background-position: -111px -135px;
+    width: 17px;
+    height: 23px; }
   .icon-homepage.icon-icon-tree {
-    background-position: -138px -148px;
-    width: 64px;
-    height: 60px; }
+    background-position: -212px -135px;
+    width: 46px;
+    height: 44px; }
   .icon-homepage.icon-icon-video {
-    background-position: -268px -148px;
-    width: 64px;
-    height: 64px; }
+    background-position: -5px -222px;
+    width: 46px;
+    height: 46px; }
   .icon-homepage.icon-logo1 {
-    background-position: -386px -5px;
-    width: 199px;
-    height: 175px; }
+    background-position: -342px -190px;
+    width: 140px;
+    height: 122px; }
   .icon-homepage.icon-logo2 {
-    background-position: -5px -322px;
-    width: 278px;
-    height: 63px; }
-  @media (max-width: 1400px) {
-    .icon-homepage.icon-icon-box-question {
-      background-position: -71px -5px;
-      width: 41px;
-      height: 46px; }
-    .icon-homepage.icon-icon-doc {
-      background-position: -175px -5px;
-      width: 31px;
-      height: 31px; }
-    .icon-homepage.icon-icon-doctor {
-      background-position: -290px -5px;
-      width: 47px;
-      height: 45px; }
-    .icon-homepage.icon-icon-eye {
-      background-position: -347px -31px;
-      width: 22px;
-      height: 12px; }
-    .icon-homepage.icon-icon-facebook {
-      background-position: -347px -53px;
-      width: 16px;
-      height: 31px; }
-    .icon-homepage.icon-icon-heart {
-      background-position: -122px -60px;
-      width: 40px;
-      height: 35px; }
-    .icon-homepage.icon-icon-less {
-      background-position: -207px -94px;
-      width: 23px;
-      height: 17px; }
-    .icon-homepage.icon-icon-pre {
-      background-position: -272px -94px;
-      width: 17px;
-      height: 23px; }
-    .icon-homepage.icon-icon-question {
-      background-position: -70px -148px;
-      width: 31px;
-      height: 31px; }
-    .icon-homepage.icon-icon-show {
-      background-position: -111px -135px;
-      width: 17px;
-      height: 23px; }
-    .icon-homepage.icon-icon-tree {
-      background-position: -212px -135px;
-      width: 46px;
-      height: 44px; }
-    .icon-homepage.icon-icon-video {
-      background-position: -5px -222px;
-      width: 46px;
-      height: 46px; }
-    .icon-homepage.icon-logo1 {
-      background-position: -342px -190px;
-      width: 140px;
-      height: 122px; }
-    .icon-homepage.icon-logo2 {
-      background-position: -293px -322px;
-      width: 198px;
-      height: 45px; } }
+    background-position: -293px -322px;
+    width: 198px;
+    height: 45px; }
 
 /*breakpoint*/
 .header {
@@ -6013,21 +5956,19 @@ button.close {
   height: 125px;
   position: relative;
   width: 100%;
-  z-index: -1; }
-  .header:after {
+  clear: both; }
+  .header .content {
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
     background: url("../img/partern.png") repeat-x;
     left: 0;
-    top: 0;
-    z-index: 0; }
+    top: 0; }
   .header .navbar-default, .header .navbar {
     background-color: transparent;
     border: 0;
-    margin: 0;
-    z-index: 1; }
+    margin: 0; }
     .header .navbar-default .navbar-collapse, .header .navbar .navbar-collapse {
       border: 0; }
     .header .navbar-default .navbar-brand, .header .navbar .navbar-brand {
@@ -6091,3 +6032,77 @@ button.close {
         float: right;
         margin-bottom: 10px;
         margin-top: 0; } }
+
+.banner {
+  display: block;
+  background: url("../img/bg-banner.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 387px;
+  clear: both; }
+  .banner .group-banner {
+    margin-top: 10px;
+    display: block; }
+    .banner .group-banner #nutri-event {
+      position: relative;
+      display: block;
+      width: 100%; }
+      .banner .group-banner #nutri-event.owl-carousel .owl-wrapper-outer {
+        -webkit-border-radius: 0 0 0 20px;
+        border-radius: 0 0 0 20px;
+        background-clip: padding-box;
+        /* stops bg color from leaking outside the border: */ }
+      .banner .group-banner #nutri-event .owl-controls {
+        position: absolute;
+        right: 5px;
+        bottom: 10px; }
+        .banner .group-banner #nutri-event .owl-controls .owl-page, .banner .group-banner #nutri-event .owl-controls div {
+          display: inline-block;
+          margin-right: 12px; }
+          .banner .group-banner #nutri-event .owl-controls .owl-page span, .banner .group-banner #nutri-event .owl-controls div span {
+            background-color: #fff;
+            border: 1px solid #e81c1f;
+            margin: 0;
+            height: 14px;
+            width: 14px;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%; }
+            .banner .group-banner #nutri-event .owl-controls .owl-page span:hover, .banner .group-banner #nutri-event .owl-controls div span:hover {
+              background-color: #e81c1f; }
+          .banner .group-banner #nutri-event .owl-controls .owl-page.active span, .banner .group-banner #nutri-event .owl-controls div.active span {
+            background-color: #e81c1f; }
+    .banner .group-banner .group-news {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: #028f43;
+      -webkit-border-radius: 0 0 20px 0;
+      border-radius: 0 0 20px 0;
+      background-clip: padding-box;
+      /* stops bg color from leaking outside the border: */
+      overflow: hidden; }
+      .banner .group-banner .group-news .news-title {
+        background-color: #016b32;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        height: 100%;
+        margin: 0;
+        padding: 5px 0;
+        text-align: center;
+        width: 100%; }
+      .banner .group-banner .group-news .news-box {
+        padding: 8px 15px; }
+        .banner .group-banner .group-news .news-box .news-item {
+          height: 72px;
+          margin: 5px 0;
+          border-bottom: 1px solid white; }
+          .banner .group-banner .group-news .news-box .news-item:first-child {
+            margin: 0 0 5px; }
+          .banner .group-banner .group-news .news-box .news-item:last-child {
+            margin: 5px 0 0; }
+          .banner .group-banner .group-news .news-box .news-item .news-img {
+            display: table-cell; }
+          .banner .group-banner .group-news .news-box .news-item .news-detail {
+            display: table-cell; }

@@ -5,8 +5,8 @@
   height: 125px;
   position: relative;
   width: 100%;
-  z-index: -1;
-  &:after {
+  clear: both;
+  .content {
     content: '';
     position: absolute;
     width: 100%;
@@ -14,13 +14,11 @@
     background: url("../img/partern.png") repeat-x;
     left: 0;
     top: 0;
-    z-index: 0;
   }
   .navbar-default, .navbar {
     background-color: transparent;
     border: 0;
     margin: 0;
-    z-index: 1;
     .navbar-collapse {
       border: 0;
     }
