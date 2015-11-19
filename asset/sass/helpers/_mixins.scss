@@ -1,5 +1,11 @@
 /* Responsive Breakpoints
    ========================================================================== */
+@mixin stitches-icon($x, $y, $width, $height) {
+  background-position: $x $y;
+  width: $width;
+  height: $height;
+}
+
 @mixin breakpoint($point) {
   @if $point == sm-break {
     @media (max-width: $sm-break) {

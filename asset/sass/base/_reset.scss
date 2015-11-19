@@ -17,7 +17,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block; }
  
 body {
-  line-height: 1; }
+  line-height: 1;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
  
 ol, ul {
   list-style: none; }
@@ -40,3 +43,7 @@ table {
   border-spacing: 0; }
 
 .clear{clear: both;}
+
+.container{
+  width: 1180px;
+}

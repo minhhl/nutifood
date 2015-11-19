@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900,100italic,300italic,400italic,500italic,700italic,900italic&subset=latin,vietnamese);
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -5880,3 +5881,141 @@ button.close {
 /* TRIPLE BORDERS */
 /* CALCULATOR */
 /* USER SELECT */
+.icon-homepage {
+  background: url("../img/spritesheet.png") no-repeat;
+  display: block; }
+  .icon-homepage.icon-icon-box-question {
+    background-position: -5px -5px;
+    width: 56px;
+    height: 64px; }
+  .icon-homepage.icon-icon-doc {
+    background-position: -122px -5px;
+    width: 43px;
+    height: 43px; }
+  .icon-homepage.icon-icon-doctor {
+    background-position: -216px -5px;
+    width: 64px;
+    height: 62px; }
+  .icon-homepage.icon-icon-eye {
+    background-position: -347px -5px;
+    width: 29px;
+    height: 16px; }
+  .icon-homepage.icon-icon-facebook {
+    background-position: -175px -53px;
+    width: 22px;
+    height: 43px; }
+  .icon-homepage.icon-icon-heart {
+    background-position: -5px -94px;
+    width: 55px;
+    height: 48px; }
+  .icon-homepage.icon-icon-less {
+    background-position: -70px -94px;
+    width: 31px;
+    height: 22px; }
+  .icon-homepage.icon-icon-pre {
+    background-position: -240px -94px;
+    width: 22px;
+    height: 31px; }
+  .icon-homepage.icon-icon-question {
+    background-position: -299px -94px;
+    width: 44px;
+    height: 44px; }
+  .icon-homepage.icon-icon-show {
+    background-position: -353px -94px;
+    width: 22px;
+    height: 31px; }
+  .icon-homepage.icon-icon-tree {
+    background-position: -138px -148px;
+    width: 64px;
+    height: 60px; }
+  .icon-homepage.icon-icon-video {
+    background-position: -268px -148px;
+    width: 64px;
+    height: 64px; }
+  .icon-homepage.icon-logo1 {
+    background-position: -386px -5px;
+    width: 199px;
+    height: 175px; }
+  .icon-homepage.icon-logo2 {
+    background-position: -5px -322px;
+    width: 278px;
+    height: 63px; }
+  @media (max-width: 1400px) {
+    .icon-homepage.icon-icon-box-question {
+      background-position: -71px -5px;
+      width: 41px;
+      height: 46px; }
+    .icon-homepage.icon-icon-doc {
+      background-position: -175px -5px;
+      width: 31px;
+      height: 31px; }
+    .icon-homepage.icon-icon-doctor {
+      background-position: -290px -5px;
+      width: 47px;
+      height: 45px; }
+    .icon-homepage.icon-icon-eye {
+      background-position: -347px -31px;
+      width: 22px;
+      height: 12px; }
+    .icon-homepage.icon-icon-facebook {
+      background-position: -347px -53px;
+      width: 16px;
+      height: 31px; }
+    .icon-homepage.icon-icon-heart {
+      background-position: -122px -60px;
+      width: 40px;
+      height: 35px; }
+    .icon-homepage.icon-icon-less {
+      background-position: -207px -94px;
+      width: 23px;
+      height: 17px; }
+    .icon-homepage.icon-icon-pre {
+      background-position: -272px -94px;
+      width: 17px;
+      height: 23px; }
+    .icon-homepage.icon-icon-question {
+      background-position: -70px -148px;
+      width: 31px;
+      height: 31px; }
+    .icon-homepage.icon-icon-show {
+      background-position: -111px -135px;
+      width: 17px;
+      height: 23px; }
+    .icon-homepage.icon-icon-tree {
+      background-position: -212px -135px;
+      width: 46px;
+      height: 44px; }
+    .icon-homepage.icon-icon-video {
+      background-position: -5px -222px;
+      width: 46px;
+      height: 46px; }
+    .icon-homepage.icon-logo1 {
+      background-position: -342px -190px;
+      width: 140px;
+      height: 122px; }
+    .icon-homepage.icon-logo2 {
+      background-position: -293px -322px;
+      width: 198px;
+      height: 45px; } }
+
+.header {
+  background-color: #e71c1f;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e71c1f), to(#c2171a));
+  background-image: -webkit-linear-gradient(top, #e71c1f, #c2171a);
+  background-image: -moz-linear-gradient(top, #e71c1f, #c2171a);
+  background-image: -ms-linear-gradient(top, #e71c1f, #c2171a);
+  background-image: -o-linear-gradient(top, #e71c1f, #c2171a);
+  background-image: linear-gradient(top, #e71c1f, #c2171a);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#e71c1f', endColorStr='#c2171a');
+  display: table;
+  float: left;
+  height: 125px;
+  position: relative;
+  width: 100%; }
+  .header .navbar-default, .header .navbar {
+    background-color: transparent;
+    border: 0;
+    margin: 0; }
+    .header .navbar-default .navbar-brand, .header .navbar .navbar-brand {
+      display: table;
+      padding: 0; }

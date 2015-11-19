@@ -1,0 +1,17 @@
+.header{
+  @include background-gradient(#e71c1f,#c2171a);
+  display: table;
+  float: left;
+  height: 125px;
+  position: relative;
+  width: 100%;
+  .navbar-default, .navbar{
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    .navbar-brand{
+      display: table;
+      padding: 0;
+    }
+  }
+}
