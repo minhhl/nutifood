@@ -1,0 +1,97 @@
+.tab2{
+  clear: both;
+  display: block;
+  width: 100%;
+  @include box-shadow(0,5px,12px,rgba(0,0,0,0.18),inset);
+  .display-group{
+    display: block;
+    width: 100%;
+    img{
+      width: 100%;
+    }
+  }
+  #accordion{
+    margin: 0 0 1px;
+    .panel{
+      margin: 0;
+      border-radius: 0;
+      border-color: #8c8b8b;
+      .panel-heading{
+        padding: 3px 20px;
+        border-radius: 0;
+        border-color: #8c8b8b;
+        background-color: #ebebeb;
+        .panel-title{
+          font-family: 'Roboto', sans-serif;
+          .icon-icon-less{
+            margin-top: 10px;
+          }
+          .icon-icon-show{
+            margin-top: 5px;
+          }
+          a.accordion-toggle{
+            font-weight: 300;
+            font-size: 18px;
+            vertical-align: middle;
+            i{
+              margin-right: 20px;
+            }
+            span{
+              font-family: 'Roboto', sans-serif;
+              font-size: 17px;
+              line-height: 30px;
+              vertical-align: top;
+              width: 85%;
+            }
+            @include breakpoint(xs-break){
+              span{
+                width: 70%;
+              }
+            }
+            i, span{
+              display: inline-block;
+            }
+          }
+        }
+      }
+      .panel-collapse{
+        .panel-body{
+          border-color: #8c8b8b;
+          max-height: 100px;
+          overflow-y: auto;;
+        }
+      }
+    }
+  }
+  .page-number{
+    display: block;
+    width: 100%;
+    position: relative;
+    background-color: #02a94f;
+    padding: 15px;
+    .number-range{
+      display: inline-block;
+      color: white;
+      margin-right: 10px;
+    }
+    a.number-range{
+      &:hover{
+        color: whitesmoke;
+      }
+    }
+    span.number-range{
+      margin-right: 0;
+      margin-left: -10px;
+    }
+    .view-all{
+      font-weight: 700;
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      color: white;
+      &:hover{
+        color: whitesmoke;
+      }
+    }
+  }
+}

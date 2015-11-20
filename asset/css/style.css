@@ -5830,7 +5830,7 @@ table {
 .clear {
   clear: both; }
 
-a:hover {
+a:hover, a:focus {
   text-decoration: none; }
 
 /* Responsive Breakpoints
@@ -6100,30 +6100,38 @@ a:hover {
       position: relative;
       display: block;
       width: 100%; }
-      .banner .group-banner #nutri-event.owl-carousel .owl-wrapper-outer {
+      .banner .group-banner #nutri-event .owl-stage-outer {
         -webkit-border-radius: 0 0 0 20px;
         border-radius: 0 0 0 20px;
         background-clip: padding-box;
-        /* stops bg color from leaking outside the border: */ }
-      .banner .group-banner #nutri-event .owl-controls {
+        /* stops bg color from leaking outside the border: */
+        overflow: hidden; }
+      @media (max-width: 480px) {
+        .banner .group-banner #nutri-event .owl-stage-outer {
+          -moz-border-radius: 0;
+          -webkit-border-radius: 0;
+          border-radius: 0; } }
+      .banner .group-banner #nutri-event .owl-dots {
         position: absolute;
         right: 5px;
         bottom: 10px; }
-        .banner .group-banner #nutri-event .owl-controls .owl-page, .banner .group-banner #nutri-event .owl-controls div {
+        .banner .group-banner #nutri-event .owl-dots .owl-dot {
           display: inline-block;
           margin-right: 12px; }
-          .banner .group-banner #nutri-event .owl-controls .owl-page span, .banner .group-banner #nutri-event .owl-controls div span {
+          .banner .group-banner #nutri-event .owl-dots .owl-dot span {
             background-color: #fff;
             border: 1px solid #e81c1f;
             margin: 0;
             height: 14px;
+            cursor: pointer;
             width: 14px;
+            display: block;
             -moz-border-radius: 50%;
             -webkit-border-radius: 50%;
             border-radius: 50%; }
-            .banner .group-banner #nutri-event .owl-controls .owl-page span:hover, .banner .group-banner #nutri-event .owl-controls div span:hover {
+            .banner .group-banner #nutri-event .owl-dots .owl-dot span:hover {
               background-color: #e81c1f; }
-          .banner .group-banner #nutri-event .owl-controls .owl-page.active span, .banner .group-banner #nutri-event .owl-controls div.active span {
+          .banner .group-banner #nutri-event .owl-dots .owl-dot.active span {
             background-color: #e81c1f; }
     .banner .group-banner .group-news {
       display: block;
@@ -6254,7 +6262,7 @@ a:hover {
     border-radius: 50%;
     background-color: white;
     top: -10px; }
-    .main-title .title-type .icon-icon-tree, .main-title .title-type .icon-icon-doctor, .main-title .title-type .icon-icon-box-question, .main-title .title-type .icon-icon-heart, .main-title .title-type .icon-icon-video, .main-title .title-type .icon-icon-facebook {
+    .main-title .title-type .icon-icon-tree, .main-title .title-type .icon-icon-doctor, .main-title .title-type .icon-icon-box-question, .main-title .title-type .icon-icon-heart, .main-title .title-type .icon-icon-video, .main-title .title-type .icon-icon-facebook, .main-title .title-type .icon-icon-doc {
       position: absolute;
       left: 50%;
       top: 50%;
@@ -6274,6 +6282,9 @@ a:hover {
       margin-top: -23px; }
     .main-title .title-type .icon-icon-facebook {
       margin-left: -10px;
+      margin-top: -15px; }
+    .main-title .title-type .icon-icon-doc {
+      margin-left: -15px;
       margin-top: -15px; }
   .main-title.green {
     background-color: #02a94f; }
@@ -6408,6 +6419,80 @@ a:hover {
           top: 50%;
           width: 100%;
           z-index: 1; }
+
+.tab2 {
+  clear: both;
+  display: block;
+  width: 100%;
+  -webkit-box-shadow: inset 0 5px 12px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: inset 0 5px 12px rgba(0, 0, 0, 0.18);
+  box-shadow: inset 0 5px 12px rgba(0, 0, 0, 0.18); }
+  .tab2 .display-group {
+    display: block;
+    width: 100%; }
+    .tab2 .display-group img {
+      width: 100%; }
+  .tab2 #accordion {
+    margin: 0 0 1px; }
+    .tab2 #accordion .panel {
+      margin: 0;
+      border-radius: 0;
+      border-color: #8c8b8b; }
+      .tab2 #accordion .panel .panel-heading {
+        padding: 3px 20px;
+        border-radius: 0;
+        border-color: #8c8b8b;
+        background-color: #ebebeb; }
+        .tab2 #accordion .panel .panel-heading .panel-title {
+          font-family: 'Roboto', sans-serif; }
+          .tab2 #accordion .panel .panel-heading .panel-title .icon-icon-less {
+            margin-top: 10px; }
+          .tab2 #accordion .panel .panel-heading .panel-title .icon-icon-show {
+            margin-top: 5px; }
+          .tab2 #accordion .panel .panel-heading .panel-title a.accordion-toggle {
+            font-weight: 300;
+            font-size: 18px;
+            vertical-align: middle; }
+            .tab2 #accordion .panel .panel-heading .panel-title a.accordion-toggle i {
+              margin-right: 20px; }
+            .tab2 #accordion .panel .panel-heading .panel-title a.accordion-toggle span {
+              font-family: 'Roboto', sans-serif;
+              font-size: 17px;
+              line-height: 30px;
+              vertical-align: top;
+              width: 85%; }
+            @media (max-width: 480px) {
+              .tab2 #accordion .panel .panel-heading .panel-title a.accordion-toggle span {
+                width: 70%; } }
+            .tab2 #accordion .panel .panel-heading .panel-title a.accordion-toggle i, .tab2 #accordion .panel .panel-heading .panel-title a.accordion-toggle span {
+              display: inline-block; }
+      .tab2 #accordion .panel .panel-collapse .panel-body {
+        border-color: #8c8b8b;
+        max-height: 100px;
+        overflow-y: auto; }
+  .tab2 .page-number {
+    display: block;
+    width: 100%;
+    position: relative;
+    background-color: #02a94f;
+    padding: 15px; }
+    .tab2 .page-number .number-range {
+      display: inline-block;
+      color: white;
+      margin-right: 10px; }
+    .tab2 .page-number a.number-range:hover {
+      color: whitesmoke; }
+    .tab2 .page-number span.number-range {
+      margin-right: 0;
+      margin-left: -10px; }
+    .tab2 .page-number .view-all {
+      font-weight: 700;
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      color: white; }
+      .tab2 .page-number .view-all:hover {
+        color: whitesmoke; }
 
 .tab4 {
   display: block;
