@@ -28,11 +28,25 @@
         @include border-radius-multiple(0, 0, 0, 20px);
         overflow: hidden;
       }
+
+      @include breakpoint(md-break) {
+        .owl-stage-outer {
+          @include border-radius(0);
+        }
+      }
+
+      @include breakpoint(sm-break) {
+        .owl-stage-outer {
+          @include border-radius(0);
+        }
+      }
+
       @include breakpoint(xs-break) {
         .owl-stage-outer {
           @include border-radius(0);
         }
       }
+
       .owl-dots {
         position: absolute;
         right: 5px;
@@ -124,6 +138,24 @@
             }
           }
         }
+      }
+    }
+
+    @include breakpoint(md-break) {
+      .group-news {
+        @include border-radius(0);
+      }
+    }
+
+    @include breakpoint(sm-break) {
+      .group-news {
+        @include border-radius(0);
+      }
+    }
+
+    @include breakpoint(xs-break) {
+      .group-news {
+        @include border-radius(0);
       }
     }
   }

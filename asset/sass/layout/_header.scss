@@ -59,6 +59,7 @@
       margin-right: 3px;
       margin-bottom: 0;
     }
+
     @include breakpoint(md-break){
       .navbar-collapse {
         box-shadow: none;
@@ -78,7 +79,6 @@
     @include breakpoint(sm-break){
       .navbar-collapse {
         box-shadow: none;
-        background-color: #c2171a;
         .navbar-nav {
           float: none;
           margin-left: 5px;

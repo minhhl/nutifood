@@ -17,13 +17,13 @@
       @content;
     }
   }
-  @if $point == lg-break {
-    @media (max-width: $lg-break) {
+  @if $point == md-break {
+    @media (max-width: $md-break) {
       @content;
     }
   }
-  @if $point == md-break {
-    @media (max-width: $md-break) {
+  @if $point == lg-break {
+    @media (max-width: $lg-break) {
       @content;
     }
   }

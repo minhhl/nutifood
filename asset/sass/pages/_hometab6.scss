@@ -68,6 +68,12 @@
   }
 }
 
+@include breakpoint(sm-break){
+  .tab6 {
+    padding-bottom: 35px;
+  }
+}
+
 @include breakpoint(xs-break){
   .tab6 {
     padding-bottom: 35px;
