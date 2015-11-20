@@ -4,13 +4,35 @@
   position: relative;
   margin-top: 82px;
   &:after{
-    background: rgba(0, 0, 0, 0) url("../img/bg-footer.png") no-repeat scroll center center / cover ;
+    background: transparent url("../img/bg-footer.png") no-repeat scroll center center / cover ;
     content: "";
-    height: 62px;
-    left: 0;
+    height: 61px;
+    left: 50%;
+    margin-left: -130px;
     position: absolute;
     top: -61px;
-    width: 100%;
+    width: 260px;
+  }
+  .bg-footer{
+    position: relative;
+    &:before{
+      background-color: #009639;
+      content: "";
+      height: 20px;
+      left: 0;
+      position: absolute;
+      top: -12px;
+      @include calc("width","50% - 120px");
+    }
+    &:after{
+      background-color: #009639;
+      content: "";
+      height: 20px;
+      right: 0;
+      position: absolute;
+      top: -12px;
+      @include calc("width","50% - 120px");
+    }
   }
   .title-footer{
     margin: 10px auto;

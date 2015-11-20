@@ -60,7 +60,25 @@
         .panel-body{
           border-color: #8c8b8b;
           max-height: 100px;
-          overflow-y: auto;;
+          overflow-y: auto;
+          p{
+            color: #909090;
+          }
+          span{
+            color: #909090;
+          }
+          .block{
+            padding: 20px 0;
+            position: relative;
+            a.view-this{
+              bottom: 10px;
+              color: #009639;
+              display: inline-block;
+              position: absolute;
+              right: 0;
+              text-align: left;
+            }
+          }
         }
       }
     }

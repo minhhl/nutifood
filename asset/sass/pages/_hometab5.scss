@@ -55,19 +55,21 @@
     width: 100%;
     display: block;
     margin-bottom: 10px;
-    padding: 5px 10px;
+    padding: 8px 15px;
+    @include border-radius(3px);
   }
   .submit-check-form {
     font-size: 16px;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 8px 15px;
     text-align: center;
     width: 100%;
     display: block;
     color: white;
     background-color: #e81c1f;
     font-weight: 700;
-    height: 32px;
+    height: 38px;
+    @include border-radius(3px);
     line-height: 22px;
     transition: all 0.5s ease;
     &:hover {
@@ -75,26 +77,29 @@
     }
   }
   .selector {
-    position: relative;
+    border: 1px solid #028d42;
     width: 100%;
-    height: auto;
-    display: block;
-    .cmd-form {
-      padding: 4px 10px;
-      &:after {
-        padding-right: 24px;
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 24px;
-        content: '';
-        height: 31px;
-        display: block;
-        background: url("../img/selecter.jpg") no-repeat;
+    margin-bottom: 10px;
+    @include border-radius(3px);
+    overflow: hidden;
+    background: #ecebeb url("../img/selecter.jpg") no-repeat 98% 50%;
+    select {
+      padding: 7px 15px;
+      margin: 0;
+      width: 100%;
+      border: none;
+      box-shadow: none;
+      background-color: transparent;
+      background-image: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      &:focus {
+        outline: none;
       }
     }
-
   }
+
   .group-video {
     background-color: #ffffff;
     padding: 10px 15px;
