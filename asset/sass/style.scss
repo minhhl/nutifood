@@ -4,10 +4,13 @@
 //Bootstrap
 @import "bootstrap/bootstrap";
 
+//Base
+@import "base/reset";
+
 //Helpers
 @import "helpers/mixins";
 @import "helpers/icon";
-@import "helpers/_variables";
+@import "helpers/variables";
 
 //Layout
 @import "layout/header";
@@ -19,5 +22,6 @@
 @import "pages/hometab1";
 @import "pages/hometab4";
 @import "pages/hometab5";
+@import "pages/hometab6";
 
 
