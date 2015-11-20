@@ -1,0 +1,110 @@
+.tab5 {
+  width: 100%;
+  height: 100%;
+  clear: both;
+  background: url("../img/bg-tab5.jpg") no-repeat center center;
+  background-size: cover;
+  .lady-pr {
+    width: 95%;
+    display: block;
+  }
+  .check-form {
+    background-color: #02a94f;
+    padding: 20px 20px 10px;
+    .title-check-form {
+      font-size: 16px;
+      color: white;
+      margin: 0 0 10px;
+      font-weight: 700;
+    }
+  }
+  @include breakpoint(xs-break) {
+    .check-form {
+      margin-top: 0;
+    }
+  }
+  input, select {
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+  .cmd-form {
+    border: 1px solid #028d42;
+    background-color: #ecebeb;
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+  }
+  .submit-check-form {
+    font-size: 16px;
+    text-decoration: none;
+    padding: 5px 10px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    color: white;
+    background-color: #e81c1f;
+    font-weight: 700;
+    height: 32px;
+    line-height: 22px;
+    transition: all 0.5s ease;
+    &:hover {
+      background-color: #d51a1d;
+    }
+  }
+  .selector {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    .cmd-form {
+      &:after {
+        padding-right: 24px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 24px;
+        content: '';
+        height: 31px;
+        display: block;
+        background: url("../img/selecter.jpg") no-repeat;
+      }
+    }
+
+  }
+  .group-video {
+    background-color: #ffffff;
+    padding: 10px 15px;
+    .title-group-video {
+      position: relative;
+      color: #3a3a3a;
+      margin: 5px 0;
+      span.viewed {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: inline-block;
+        i, span {
+          display: inline-block;
+          color: #a1a1a1;
+        }
+        i {
+          opacity: 0.3;
+        }
+      }
+    }
+    .page-video {
+      display: block;
+      a.page {
+        display: inline-block;
+        color: #a1a1a1;
+        text-decoration: none;
+        margin-right: 10px;
+        &.active, &:hover {
+          color: #3a3a3a;
+        }
+      }
+    }
+  }
+}

@@ -25,7 +25,7 @@
     @include border-radius(50%);
     background-color: white;
     top: -10px;
-    .icon-icon-tree,.icon-icon-doctor,.icon-icon-box-question{
+    .icon-icon-tree,.icon-icon-doctor,.icon-icon-box-question,.icon-icon-heart,.icon-icon-video{
       position: absolute;
       left: 50%;
       top: 50%;
@@ -40,6 +40,14 @@
       margin-left: -20px;
       margin-top: -20px;
     }
+    .icon-icon-heart{
+      margin-left: -20px;
+      margin-top: -16px;
+    }
+    .icon-icon-video{
+      margin-left: -22px;
+      margin-top: -23px;
+    }
   }
   &.green{
     background-color: #02a94f;
@@ -49,5 +57,11 @@
     .title-type{
       border: 1px solid #e81c1f;
     }
+  }
+}
+
+@include breakpoint(xs-break){
+  .main-title{
+    font-size: 12px;
   }
 }
