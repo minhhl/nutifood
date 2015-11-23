@@ -66,3 +66,27 @@
   }
 }
 
+.products{
+  background: #009639 url("../img/bg-product.png") no-repeat center center;
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-top: 25px;
+  transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  .img-pr{
+    width: 100%;
+    display: block;
+    img{
+      float: left;
+    }
+  }
+  .product-content{
+    margin-top: 10px;
+    .prod-view{width: 100%}
+    .prod-medan{width: 90%}
+  }
+}
