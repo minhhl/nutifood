@@ -90,3 +90,30 @@
     .prod-medan{width: 90%}
   }
 }
+
+.product-tab1{
+  .products{
+    background-size: cover;
+    padding-top: 70px;
+    background-position: left -170px top -70px;
+    padding-bottom: 0;
+  }
+}
+
+@include breakpoint(md-break) {
+
+}
+
+@include breakpoint(sm-break) {
+
+}
+
+@include breakpoint(xs-break) {
+  .product-tab1{
+    .products{
+      padding-top: 20px;
+      background-position: left -50px top -10px;
+      padding-bottom: 10px;
+    }
+  }
+}

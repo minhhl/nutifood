@@ -8,10 +8,10 @@
 @import "base/reset";
 
 //Helpers
-@import "helpers/images";
 @import "helpers/mixins";
 @import "helpers/icon";
 @import "helpers/variables";
+@import "helpers/images";
 
 //Layout
 @import "layout/header";
@@ -26,5 +26,12 @@
 @import "pages/hometab4";
 @import "pages/hometab5";
 @import "pages/hometab6";
+
+//Products
+@import "pages/_product-tab1";
+@import "pages/_product-tab2";
+@import "pages/_product-tab3";
+@import "pages/_product-tab4";
+@import "pages/_product-tab5";
 
 

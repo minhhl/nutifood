@@ -1,4 +1,9 @@
 .tab3 {
+  #tab-child1{
+    .item{
+      padding: 0;
+    }
+  }
   background: url("../img/bg-tab3.jpg") no-repeat;
   background-size: cover;
   display: block;
@@ -56,6 +61,7 @@
         width: 100%;
         background-size: cover;
         display: block;
+        cursor: pointer;
         height: 160px;
       }
       a.view-detail {
@@ -65,6 +71,7 @@
         margin-left: 10px;
         margin-top: 5px;
         max-width: 95%;
+        text-transform: uppercase;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -139,6 +146,7 @@ $green: #02a94f;
     letter-spacing: 0;
     outline: none;
     padding: 0 20px;
+    text-transform: uppercase;
     text-decoration: none;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -192,7 +200,8 @@ $green: #02a94f;
 .current a {
   color: #fff;
   background: $green;
-  @include border-radius(2px);
+  @include border-radius(8px);
+  text-transform: uppercase;
 }
 
 // END TAB ~~~~~~~~~~~~~~~ (.)(.)

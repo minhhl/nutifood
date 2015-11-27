@@ -10,6 +10,15 @@
   text-transform: uppercase;
   position: relative;
   white-space: nowrap;
+  .text-overflow{
+    display: block;
+    max-width: 95%;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+  }
   a {
     text-align: center;
     text-decoration: none;
