@@ -269,6 +269,38 @@
   background: -o-linear-gradient(top,  $endColor, $startColor);
 }
 
+@mixin background-gradient-bottom-top($startColor, $endColor) {
+  /* fallback */
+  background-color: $startColor;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($startColor), to( $endColor)); /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(top, $endColor, $startColor); /* Firefox 3.6+ */
+  background: -moz-linear-gradient(top,  $endColor, $startColor); /* IE 10 */
+  background: -ms-linear-gradient(top,  $endColor, $startColor); /* Opera 11.10+ */
+  background: -o-linear-gradient(top,  $endColor, $startColor);
+}
+
+@mixin background-gradient-left-right($startColor, $endColor) {
+  background-color: $startColor;
+  background-image: -webkit-gradient(linear, left top, right top, from($startColor), to($endColor));
+  background-image: -webkit-linear-gradient(left, $startColor, $endColor);
+  background-image:    -moz-linear-gradient(left, $startColor, $endColor);
+  background-image:     -ms-linear-gradient(left, $startColor, $endColor);
+  background-image:      -o-linear-gradient(left, $startColor, $endColor);
+  background-image:         linear-gradient(left, $startColor, $endColor);
+  filter:            progid:DXImageTransform.Microsoft.gradient(start-colourStr='#{$startColor}', end-colourStr='#{$endColor}', gradientType='1');
+}
+
+@mixin background-gradient-right-left($startColor, $endColor) {
+  background-color: $startColor;
+  background-image: -webkit-gradient(linear, right top, left top, from($startColor), to($endColor));
+  background-image: -webkit-linear-gradient(right, $startColor, $endColor);
+  background-image:    -moz-linear-gradient(right, $startColor, $endColor);
+  background-image:     -ms-linear-gradient(right, $startColor, $endColor);
+  background-image:      -o-linear-gradient(right, $startColor, $endColor);
+  background-image:         linear-gradient(right, $startColor, $endColor);
+  filter:            progid:DXImageTransform.Microsoft.gradient(start-colourStr='#{$endColor}', end-colourStr='#{$startColor}', gradientType='1');
+}
+
 /* BACKGROUND SIZE */
 @mixin background-size($width: 100%, $height: 100%) {
   -moz-background-size: $width $height;

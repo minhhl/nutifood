@@ -1,0 +1,179 @@
+.product-tab5 {
+  .step1, .step2, .step3 {
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    img.background-step {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    .content-step {
+      padding: 15px 30px;
+      color: #05481f;
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.85);
+    }
+    @include breakpoint(sm-break) {
+      .content-step {
+        position: relative;
+      }
+    }
+    @include breakpoint(xs-break) {
+      .content-step {
+        position: relative;
+      }
+    }
+  }
+  .step1 {
+    .content-step {
+      color: #05481f;
+      left: 0;
+      top: 100px;
+      width: 70%;
+      p {
+        width: 85%;
+      }
+    }
+
+    @include breakpoint(md-break) {
+      .content-step {
+        top: 10px;
+        width: 77%;
+        p {
+          width: 80%;
+        }
+      }
+    }
+
+    @include breakpoint(sm-break) {
+      .content-step {
+        top: 0;
+        width: 100%;
+        p {
+          width: 100%;
+        }
+      }
+    }
+    @include breakpoint(xs-break) {
+      .content-step {
+        top: 0;
+        width: 100%;
+        p {
+          width: 100%;
+        }
+      }
+    }
+    .action-group {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+
+      img {
+        width: 100%;
+        display: block;
+      }
+      .step1-part1 {
+        bottom: -15px;
+        left: 135px;
+        position: absolute;
+      }
+      .step1-part2 {
+        bottom: 0;
+        left: 58px;
+        position: absolute;
+      }
+      .step1-part3 {
+        bottom: 240px;
+        left: 0;
+        position: absolute;
+      }
+    }
+    @include breakpoint(sm-break) {
+      .action-group {
+        top: 0;
+        .step1-part1 {
+          bottom: -275px;
+          left: 0;
+          position: absolute;
+        }
+        .step1-part2 {
+          bottom: -268px;
+          left: 0;
+          position: absolute;
+        }
+        .step1-part3 {
+          bottom: -155px;
+          left: 0;
+          position: absolute;
+        }
+      }
+    }
+    @include breakpoint(xs-break) {
+      .action-group {
+        top: 0;
+        .step1-part1 {
+          bottom: -150px;
+          left: 0;
+          position: absolute;
+        }
+        .step1-part2 {
+          bottom: -145px;
+          left: 0;
+          position: absolute;
+        }
+        .step1-part3 {
+          bottom: -90px;
+          left: 0;
+          position: absolute;
+        }
+      }
+    }
+  }
+
+  .step2 {
+    .content-step {
+      @include background-gradient-left-right(transparent, rgba(255, 255, 255, 0.85));
+      color: #05481f;
+      right: 0;
+      bottom: 0;
+      width: 70%;
+      p {
+        float: right;
+        width: 80%;
+      }
+      a.cmd-discovery {
+        float: right;
+        color: #fff;
+        background-color: #e81c1f;
+        padding: 5px 15px;
+        text-decoration: none;
+        font-weight: 700;
+        &:hover {
+          background-color: #009639;
+        }
+      }
+    }
+  }
+
+  .step3 {
+    .content-step {
+      @include background-gradient-right-left(rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.95));
+      color: #05481f;
+      left: 0;
+      bottom: 0;
+      width: 70%;
+      p {
+        float: left;
+        width: 80%;
+      }
+    }
+    .step3-part1{
+      position: absolute;
+      left: 10px;
+      top: 10px;
+    }
+  }
+}
