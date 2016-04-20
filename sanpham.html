@@ -397,7 +397,8 @@
         <div class="info-product">
           <nav class="tab-nav">
             <ul class="nav nav-justified">
-              <li class="active"><a data-toggle="tab" href="#first-tab-blue" class="ripple-button">Thông tin sản phẩm</a>
+              <li class="active"><a data-toggle="tab" href="#first-tab-blue" class="ripple-button">Thông tin sản
+                phẩm</a>
               </li>
               <li><a data-toggle="tab" href="#second-tab-blue" class="ripple-button">Thông tin dinh dưỡng</a></li>
               <li><a data-toggle="tab" href="#third-tab-blue" class="ripple-button">Hướng dẫn sử dụng</a></li>
@@ -794,7 +795,8 @@
       ]
     });
 
-    $('.nav-slider').bind('click', function (e) {
+    jQuery(".red-product").click(function (e) {
+      e.preventDefault();
       $('#red-block').toggle();
       $('#blue-block').toggle();
       $('.loading-tab').css({
@@ -807,8 +809,24 @@
           opacity: 0
         });
       }, 800);
-      e.target($('.slick-next').trigger('click'));
-      e.target($('.slick-prev').trigger('click'));
+      $('.slick-arrow').trigger('click');
+    });
+
+    jQuery(".blue-product").click(function (e) {
+      e.preventDefault();
+      $('#red-block').toggle();
+      $('#blue-block').toggle();
+      $('.loading-tab').css({
+        display: "block",
+        opacity: 1
+      });
+      setTimeout(function () {
+        $('.loading-tab').css({
+          display: "none",
+          opacity: 0
+        });
+      }, 800);
+      $('.slick-arrow').trigger('click');
     });
   });
 </script>

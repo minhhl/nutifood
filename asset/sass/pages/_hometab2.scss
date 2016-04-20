@@ -1,0 +1,121 @@
+.tab2{
+  clear: both;
+  display: block;
+  width: 100%;
+  @include box-shadow(0,5px,12px,rgba(0,0,0,0.18),inset);
+  .display-group{
+    display: block;
+    width: 100%;
+    img{
+      width: 100%;
+    }
+  }
+  #accordion{
+    margin: 0 0 1px;
+    .panel{
+      margin: 0;
+      border-radius: 0;
+      border-color: #8c8b8b;
+      border-bottom: 0;
+      &:last-child{
+        border-bottom: 1px solid #8c8b8b;
+      }
+      .panel-heading{
+        padding: 3px 20px;
+        border-radius: 0;
+        border-color: #8c8b8b;
+        background-color: #ebebeb;
+        .panel-title{
+          font-family: 'Roboto', sans-serif;
+          a.accordion-toggle{
+            font-weight: 300;
+            font-size: 18px;
+            vertical-align: middle;
+            display: block;
+            position: relative;
+            width: 100%;
+            i{
+              margin-right: 20px;
+            }
+            span{
+              font-family: 'Roboto', sans-serif;
+              font-size: 17px;
+              line-height: 30px;
+              vertical-align: top;
+            }
+            i, span{
+              display: inline-block;
+            }
+            .icon-icon-less, .icon-icon-show{
+              position: absolute;
+              right: 0;
+              margin-right: 0
+            }
+            .icon-icon-less{
+              top: 10px;
+            }
+            .icon-icon-show{
+              top: 5px;
+            }
+          }
+        }
+      }
+      .panel-collapse{
+        .panel-body{
+          border-color: #8c8b8b;
+          max-height: 100px;
+          overflow-y: auto;
+          p{
+            color: #909090;
+          }
+          span{
+            color: #909090;
+          }
+          .block{
+            padding: 20px 0;
+            position: relative;
+            a.view-this{
+              bottom: 10px;
+              color: #009639;
+              display: inline-block;
+              position: absolute;
+              right: 0;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+  .page-number{
+    display: block;
+    width: 100%;
+    position: relative;
+    background-color: #02a94f;
+    padding: 15px;
+    .number-range{
+      display: inline-block;
+      color: white;
+      margin-right: 10px;
+    }
+    a.number-range{
+      &:hover{
+        color: whitesmoke;
+      }
+    }
+    span.number-range{
+      margin-right: 0;
+      margin-left: -10px;
+    }
+    .view-all{
+      font-weight: 700;
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      color: white;
+      &:hover{
+        color: whitesmoke;
+      }
+    }
+  }
+}
