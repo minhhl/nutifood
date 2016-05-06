@@ -1,11 +1,11 @@
 .header {
   @include background-gradient(#e71c1f, #c2171a);
   display: table;
-  float: left;
   height: 125px;
   position: relative;
   width: 100%;
   clear: both;
+  z-index: 99;
   .content {
     content: '';
     position: absolute;
@@ -54,13 +54,15 @@
       }
     }
     .social-icons {
-      float: right;
       margin-top: 40px;
       margin-right: 3px;
       margin-bottom: 0;
+      position: absolute;
+      right: 0;
+      top: -25px;
     }
 
-    @include breakpoint(md-break){
+    @include breakpoint(md-break) {
       .navbar-collapse {
         box-shadow: none;
         .navbar-nav {
@@ -70,13 +72,18 @@
           margin-top: 15px;
         }
         .social-icons {
+          display: block;
+          height: 100%;
           margin-bottom: 0;
-          margin-top: -55px;
+          margin-top: 0;
+          position: absolute;
+          right: 0;
+          top: 70px;
         }
       }
     }
 
-    @include breakpoint(sm-break){
+    @include breakpoint(sm-break) {
       .navbar-collapse {
         box-shadow: none;
         .navbar-nav {
@@ -86,8 +93,13 @@
           margin-top: 15px;
         }
         .social-icons {
+          display: block;
+          height: 100%;
           margin-bottom: 0;
-          margin-top: -55px;
+          margin-top: 0;
+          position: absolute;
+          right: 0;
+          top: 70px;
         }
       }
     }
@@ -97,18 +109,19 @@
         box-shadow: none;
         background-color: #c2171a;
         .navbar-nav {
+          float: none;
           margin-left: 5px;
           margin-right: 5px;
           margin-top: 15px;
         }
         .social-icons {
-          float: right;
-          margin-bottom: 10px;
-          margin-top: 0;
+          margin: 0 0 10px;
+          position: relative;
+          right: 0;
+          text-align: center;
+          top: 0;
         }
       }
     }
   }
-
-
 }
