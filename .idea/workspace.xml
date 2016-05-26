@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b26b6f3-d41f-414c-9365-1d2302d980f8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homepage.html" afterPath="$PROJECT_DIR$/homepage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asset/img/nutri-bg.png" afterPath="$PROJECT_DIR$/asset/img/nutri-bg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="nutifood.iws" />
     <ignored path=".idea/workspace.xml" />
