@@ -136,4 +136,78 @@
       }
     }
   }
+  .check-now{
+    display: block;
+    background-color: #02801d;
+    @include border-radius(8px);
+    border: 1px solid white;
+    @include transition(all, 0.2s, ease-in-out);
+    box-shadow: 0 0 4px rgb(255, 255, 255) inset;
+    position: relative;
+    margin-bottom: 10px;
+    .check-now-content{
+      display: block;
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      .sub-content-title, .main-content-title{
+        display: block;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+      }
+      .sub-content-title{
+        color: #6de110;
+        font-size: 18px;
+        @include transition(all, 0.2s, ease-in-out);
+      }
+      .main-content-title{
+        color: #6de110;
+        font-weight: bold;
+        line-height: 30px;
+        font-size: 28px;
+        @include transition(all, 0.2s, ease-in-out);
+        margin-bottom: 10px;
+      }
+      .btn-check-now{
+        color: white;
+        text-transform: uppercase;
+        padding: 3px 10px 6px;
+        @include background-gradient-left-right(#489708, #6ce709);
+        @include transition(all, 0.2s, ease-in-out);
+        position: relative;
+        @include border-radius(2px);
+        z-index: 1;
+        &:after{
+          content: '';
+          position: absolute;
+          width: 98%;
+          height: 96%;
+          left: 1%;
+          top: 4%;
+          z-index: -1;
+          @include border-radius(1px);
+          background-color: #e5282a;
+        }
+        &:hover{
+          background-color: #e5282a;
+        }
+      }
+    }
+    &:hover{
+      background-color: #2bcf3a;
+      .check-now-content{
+        .sub-content-title{
+          color: #035916;
+        }
+        .main-content-title{
+          color: white;
+        }
+      }
+    }
+    img{
+      @include border-radius(8px);
+      display: block;
+      width: 100%;
+    }
+  }
 }
